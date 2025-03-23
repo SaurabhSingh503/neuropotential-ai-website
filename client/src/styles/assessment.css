@@ -1,0 +1,157 @@
+.assessment-page {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .assessment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .assessment-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .assessment-header h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+  }
+  
+  .assessment-header p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .assessment-progress {
+    margin: var(--spacing-md) 0;
+  }
+  
+  .chat-container {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  
+  .messages-container {
+    flex: 1;
+    padding: var(--spacing-md);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loading-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-light);
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .message {
+    max-width: 75%;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ai-message {
+    align-self: flex-start;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+  }
+  
+  .message-content {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    position: relative;
+  }
+  
+  .ai-message .message-content {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+  }
+  
+  .user-message .message-content {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .message-time {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+    align-self: flex-end;
+  }
+  
+  .message-form {
+    display: flex;
+    padding: var(--spacing-md);
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    margin-right: var(--spacing-sm);
+  }
+  
+  .send-button {
+    min-width: 80px;
+  }
+  
+  .assessment-complete {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+  }
+  
+  .assessment-complete p {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .assessment-info {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .assessment-info h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary-color);
+  }
+  
+  .assessment-info p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-light);
+  }
+  

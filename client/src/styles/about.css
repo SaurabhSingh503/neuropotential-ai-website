@@ -1,0 +1,147 @@
+.about-page {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .about-header {
+    margin-bottom: var(--spacing-xxl);
+    text-align: center;
+  }
+  
+  .about-header h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+  }
+  
+  .about-header p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-section {
+    margin-bottom: var(--spacing-xxl);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-section h3 {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--secondary-color);
+  }
+  
+  .about-section p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .approach-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-xl);
+    text-align: center;
+  }
+  
+  .approach-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .approach-card h4 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .team-member {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .team-photo {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--accent-color);
+  }
+  
+  .team-member h4 {
+    margin-top: var(--spacing-md);
+    padding: 0 var(--spacing-md);
+    color: var(--secondary-color);
+  }
+  
+  .team-role {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    padding: 0 var(--spacing-md);
+  }
+  
+  .team-bio {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    padding: 0 var(--spacing-md) var(--spacing-md);
+  }
+  
+  .about-cta {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-cta h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+  }
+  
+  .about-cta p {
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .approach-grid,
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-section p {
+      font-size: 1rem;
+    }
+  }
+  

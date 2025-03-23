@@ -1,0 +1,107 @@
+.profile-page {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .profile-header {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .profile-header h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+  }
+  
+  .profile-header p {
+    color: var(--text-light);
+  }
+  
+  .profile-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .profile-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .profile-card h3 {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--secondary-color);
+  }
+  
+  .profile-form {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .security-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .security-option:last-child {
+    border-bottom: none;
+  }
+  
+  .security-option-info h4 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color);
+  }
+  
+  .security-option-info p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .alert {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+  }
+  
+  .alert-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .profile-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-actions {
+      flex-direction: column;
+    }
+    
+    .profile-actions button {
+      width: 100%;
+    }
+  }
+  
